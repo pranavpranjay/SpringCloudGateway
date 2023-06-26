@@ -1,0 +1,42 @@
+version: '3.2'
+
+services:
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.4.3
+    container_name: elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=false
+      - "ES_JAVA_OPTS=-Xms1500m -Xmx1500m"
+      - discovery.type=single-node
+    mem_limit: 2g
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    restart: always
+    
+  ls:
+    image: docker.elastic.co/logstash/logstash:5.4.3
+    container_name: logstash
+    environment:
+      - xpack.monitoring.enabled=true
+      - 'input { tcp { port => 5000 codec => “json” }} output { elasticsearch { hosts => [“elasticsearch:9200”] index => ["logstash-%{serviceName}", "micro-%{serviceName}"] } }'
+    depends_on:
+      - es
+    volumes:
+     - ./:/logstash_dir
+    command: logstash -f /logstash_dir/logstash.conf
+    ports:
+      - "5000:5000"
+    restart: always
+
+  kb:
+    image: docker.elastic.co/kibana/kibana:5.4.3
+    container_name: kibana
+    depends_on:
+      - es
+      - ls
+    ports:
+      - "5601:5601"
+    restart: always

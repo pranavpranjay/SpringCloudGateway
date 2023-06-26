@@ -1,0 +1,142 @@
+2023-06-25 11:47:12 [background-preinit] INFO  : HV000001: Hibernate Validator 6.2.5.Final
+2023-06-25 11:47:12 [main] INFO  : Starting OrderServiceApplication using Java 1.8.0_321 on Madhubala with PID 16236 (D:\workspace\microservices\SpringCloudGateway\Order-Service\target\classes started by MADBULLA in D:\workspace\microservices\SpringCloudGateway\Order-Service)
+2023-06-25 11:47:12 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-25 11:47:13 [main] INFO  : Fetching config from server at : http://localhost:9088
+2023-06-25 11:47:13 [main] INFO  : Located environment: name=order-service, profiles=[default], label=null, version=fe3a22a3ad97a5dd1d8209d167407b264571ec3f, state=null
+2023-06-25 11:47:15 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-25 11:47:15 [main] INFO  : Finished Spring Data repository scanning in 305 ms. Found 1 JPA repository interfaces.
+2023-06-25 11:47:17 [main] INFO  : BeanFactory id=4c082db2-0d0d-32ac-8e6c-6a009d5634a0
+2023-06-25 11:47:19 [main] INFO  : Tomcat initialized with port(s): 8083 (http)
+2023-06-25 11:47:19 [main] INFO  : Initializing ProtocolHandler ["http-nio-8083"]
+2023-06-25 11:47:19 [main] INFO  : Starting service [Tomcat]
+2023-06-25 11:47:19 [main] INFO  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-25 11:47:19 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-25 11:47:19 [main] INFO  : Root WebApplicationContext: initialization completed in 6800 ms
+2023-06-25 11:47:20 [main] WARN  : No URLs will be polled as dynamic configuration sources.
+2023-06-25 11:47:20 [main] INFO  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-25 11:47:20 [main] INFO  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@73e776b7
+2023-06-25 11:47:21 [main] INFO  : HikariPool-1 - Starting...
+2023-06-25 11:47:21 [main] INFO  : HikariPool-1 - Start completed.
+2023-06-25 11:47:21 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: entityManagerFactory]
+2023-06-25 11:47:21 [main] INFO  : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-25 11:47:22 [main] INFO  : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-25 11:47:23 [main] INFO  : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-25 11:47:25 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-25 11:47:25 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactory'
+2023-06-25 11:47:26 [main] WARN  : No URLs will be polled as dynamic configuration sources.
+2023-06-25 11:47:26 [main] INFO  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-25 11:47:26 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-25 11:47:28 [main] INFO  : Eureka HTTP Client uses RestTemplate.
+2023-06-25 11:47:29 [main] WARN  : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-25 11:47:29 [main] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-25 11:47:29 [main] INFO  : Setting initial instance status as: STARTING
+2023-06-25 11:47:29 [main] INFO  : Initializing Eureka in region us-east-1
+2023-06-25 11:47:29 [main] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 11:47:29 [main] INFO  : Disable delta property : false
+2023-06-25 11:47:29 [main] INFO  : Single vip registry refresh property : null
+2023-06-25 11:47:29 [main] INFO  : Force full registry fetch : false
+2023-06-25 11:47:29 [main] INFO  : Application is null : false
+2023-06-25 11:47:29 [main] INFO  : Registered Applications size is zero : true
+2023-06-25 11:47:29 [main] INFO  : Application version is -1: true
+2023-06-25 11:47:29 [main] INFO  : Getting all instance registry info from the eureka server
+2023-06-25 11:47:30 [main] INFO  : The response status is 200
+2023-06-25 11:47:30 [main] INFO  : Starting heartbeat executor: renew interval is: 30
+2023-06-25 11:47:30 [main] INFO  : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-25 11:47:30 [main] INFO  : Discovery Client initialized at timestamp 1687673850633 with initial instances count: 2
+2023-06-25 11:47:30 [main] INFO  : Registering application ORDER-SERVICE with eureka with status UP
+2023-06-25 11:47:30 [main] INFO  : Saw local status change event StatusChangeEvent [timestamp=1687673850642, current=UP, previous=STARTING]
+2023-06-25 11:47:30 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083: registering service...
+2023-06-25 11:47:30 [main] INFO  : Starting ProtocolHandler ["http-nio-8083"]
+2023-06-25 11:47:30 [main] INFO  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-06-25 11:47:30 [main] INFO  : Updating port to 8083
+2023-06-25 11:47:30 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083 - registration status: 204
+2023-06-25 11:47:31 [main] INFO  : Started OrderServiceApplication in 22.761 seconds (JVM running for 24.244)
+2023-06-25 11:48:26 [SpringApplicationShutdownHook] INFO  : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2023-06-25 11:48:26 [SpringApplicationShutdownHook] INFO  : Saw local status change event StatusChangeEvent [timestamp=1687673906792, current=DOWN, previous=UP]
+2023-06-25 11:48:26 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083: registering service...
+2023-06-25 11:48:26 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083 - registration status: 204
+2023-06-25 11:48:27 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactory'
+2023-06-25 11:48:27 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-06-25 11:48:27 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-06-25 11:48:27 [SpringApplicationShutdownHook] INFO  : Shutting down DiscoveryClient ...
+2023-06-25 11:48:30 [SpringApplicationShutdownHook] INFO  : Unregistering ...
+2023-06-25 11:48:30 [SpringApplicationShutdownHook] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083 - deregister  status: 200
+2023-06-25 11:48:30 [SpringApplicationShutdownHook] INFO  : Completed shut down of DiscoveryClient
+2023-06-25 11:48:38 [background-preinit] INFO  : HV000001: Hibernate Validator 6.2.5.Final
+2023-06-25 11:48:38 [main] INFO  : Starting OrderServiceApplication using Java 1.8.0_321 on Madhubala with PID 14156 (D:\workspace\microservices\SpringCloudGateway\Order-Service\target\classes started by MADBULLA in D:\workspace\microservices\SpringCloudGateway\Order-Service)
+2023-06-25 11:48:38 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-25 11:48:38 [main] INFO  : Fetching config from server at : http://localhost:9088
+2023-06-25 11:48:38 [main] INFO  : Located environment: name=order-service, profiles=[default], label=null, version=fe3a22a3ad97a5dd1d8209d167407b264571ec3f, state=null
+2023-06-25 11:48:42 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-25 11:48:43 [main] INFO  : Finished Spring Data repository scanning in 924 ms. Found 1 JPA repository interfaces.
+2023-06-25 11:48:45 [main] INFO  : BeanFactory id=4c082db2-0d0d-32ac-8e6c-6a009d5634a0
+2023-06-25 11:48:50 [main] INFO  : Tomcat initialized with port(s): 8083 (http)
+2023-06-25 11:48:50 [main] INFO  : Initializing ProtocolHandler ["http-nio-8083"]
+2023-06-25 11:48:50 [main] INFO  : Starting service [Tomcat]
+2023-06-25 11:48:50 [main] INFO  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-25 11:48:51 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-25 11:48:51 [main] INFO  : Root WebApplicationContext: initialization completed in 12913 ms
+2023-06-25 11:48:52 [main] WARN  : No URLs will be polled as dynamic configuration sources.
+2023-06-25 11:48:52 [main] INFO  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-25 11:48:52 [main] INFO  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4e424582
+2023-06-25 11:48:53 [main] INFO  : HikariPool-1 - Starting...
+2023-06-25 11:48:57 [main] INFO  : HikariPool-1 - Start completed.
+2023-06-25 11:48:57 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: entityManagerFactory]
+2023-06-25 11:48:58 [main] INFO  : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-25 11:48:59 [main] INFO  : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-25 11:49:00 [main] INFO  : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-25 11:49:04 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-25 11:49:04 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactory'
+2023-06-25 11:49:06 [main] WARN  : No URLs will be polled as dynamic configuration sources.
+2023-06-25 11:49:06 [main] INFO  : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-25 11:49:07 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-25 11:49:16 [main] INFO  : Eureka HTTP Client uses RestTemplate.
+2023-06-25 11:49:17 [main] WARN  : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-25 11:49:17 [main] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-25 11:49:17 [main] INFO  : Setting initial instance status as: STARTING
+2023-06-25 11:49:18 [main] INFO  : Initializing Eureka in region us-east-1
+2023-06-25 11:49:18 [main] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 11:49:18 [main] INFO  : Disable delta property : false
+2023-06-25 11:49:18 [main] INFO  : Single vip registry refresh property : null
+2023-06-25 11:49:18 [main] INFO  : Force full registry fetch : false
+2023-06-25 11:49:18 [main] INFO  : Application is null : false
+2023-06-25 11:49:18 [main] INFO  : Registered Applications size is zero : true
+2023-06-25 11:49:18 [main] INFO  : Application version is -1: true
+2023-06-25 11:49:18 [main] INFO  : Getting all instance registry info from the eureka server
+2023-06-25 11:49:20 [main] INFO  : The response status is 200
+2023-06-25 11:49:20 [main] INFO  : Starting heartbeat executor: renew interval is: 30
+2023-06-25 11:49:20 [main] INFO  : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-25 11:49:20 [main] INFO  : Discovery Client initialized at timestamp 1687673960601 with initial instances count: 2
+2023-06-25 11:49:20 [main] INFO  : Registering application ORDER-SERVICE with eureka with status UP
+2023-06-25 11:49:20 [main] INFO  : Saw local status change event StatusChangeEvent [timestamp=1687673960614, current=UP, previous=STARTING]
+2023-06-25 11:49:20 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083: registering service...
+2023-06-25 11:49:20 [main] INFO  : Starting ProtocolHandler ["http-nio-8083"]
+2023-06-25 11:49:20 [main] INFO  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-06-25 11:49:20 [main] INFO  : Updating port to 8083
+2023-06-25 11:49:20 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083 - registration status: 204
+2023-06-25 11:49:21 [main] INFO  : Started OrderServiceApplication in 48.152 seconds (JVM running for 49.682)
+2023-06-25 11:54:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 11:59:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:04:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:09:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:14:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:19:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:24:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:29:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:34:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:39:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:44:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:49:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:54:18 [AsyncResolver-bootstrap-executor-0] INFO  : Resolving eureka endpoints via configuration
+2023-06-25 12:58:51 [SpringApplicationShutdownHook] INFO  : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2023-06-25 12:58:51 [SpringApplicationShutdownHook] INFO  : Saw local status change event StatusChangeEvent [timestamp=1687678131042, current=DOWN, previous=UP]
+2023-06-25 12:58:51 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083: registering service...
+2023-06-25 12:58:51 [DiscoveryClient-InstanceInfoReplicator-0] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083 - registration status: 204
+2023-06-25 12:58:52 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactory'
+2023-06-25 12:58:52 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-06-25 12:58:52 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-06-25 12:58:52 [SpringApplicationShutdownHook] INFO  : Shutting down DiscoveryClient ...
+2023-06-25 12:58:55 [DiscoveryClient-0] WARN  : task supervisor shutting down, can't accept the task
+2023-06-25 12:58:55 [SpringApplicationShutdownHook] INFO  : Unregistering ...
+2023-06-25 12:58:55 [SpringApplicationShutdownHook] INFO  : DiscoveryClient_ORDER-SERVICE/Madhubala:order-service:8083 - deregister  status: 200
+2023-06-25 12:58:56 [SpringApplicationShutdownHook] INFO  : Completed shut down of DiscoveryClient
